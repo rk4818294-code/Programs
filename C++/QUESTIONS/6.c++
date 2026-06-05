@@ -1,2 +1,16 @@
-// write a program to take a mobile no. from user and check whether is it magic no. or not
-// magic no: A no. whose alternate digits even and odd
+// to count how many times a function is called
+
+#include<iostream>
+using namespace std;
+
+int* fun(){
+    static int a=0;
+    a++;
+ return &a;
+}
+int main(){
+    fun();
+    fun();
+    fun();
+  int*b=fun();
+}
